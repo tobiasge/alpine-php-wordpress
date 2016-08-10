@@ -44,7 +44,7 @@ RUN chmod +x /run.sh
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp-cli
 
-EXPOSE 80
+EXPOSE 8080
 VOLUME ["/DATA"]
 
 CMD ["/run.sh"]
